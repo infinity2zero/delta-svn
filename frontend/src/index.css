@@ -1,0 +1,218 @@
+@import '../../Design System/design-tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom react-tooltip styles */
+.react-tooltip {
+  @apply rounded-none border border-gray-200 dark:border-gray-700 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-normal px-2 py-1 shadow-lg;
+  z-index: 9999;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  margin: 4px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--app-font-size, 13px);
+  line-height: 1.5;
+  color: var(--color-text, #111827);
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.dark body {
+  background: transparent;
+  color: #f3f4f6;
+}
+
+html {
+  background: transparent;
+  overflow: hidden;
+}
+
+body {
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+}
+
+#root {
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Main app container - use design system background tokens */
+.w-full.h-screen {
+  overflow: hidden;
+  position: relative;
+  background: var(--color-background, rgb(132, 189, 246));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark .w-full.h-screen {
+  background: var(--color-background, #111827);
+}
+
+/* Custom Titlebar Styles - Native look with shadow */
+.titlebar {
+  height: 40px;
+  background: var(--color-surface, rgb(250, 250, 249));
+  user-select: none;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+/* macOS Traffic Lights - Native Style */
+.traffic-light {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 4px 0 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.15s ease;
+  position: relative;
+}
+
+.traffic-light:active {
+  transform: scale(0.95);
+}
+
+.traffic-light svg {
+  width: 12px;
+  height: 12px;
+}
+
+.traffic-light svg circle {
+  transition: opacity 0.2s;
+}
+
+.traffic-light:hover svg path {
+  opacity: 1 !important;
+}
+
+.traffic-light-close:hover svg circle {
+  fill: #ff5f57 !important;
+}
+
+.traffic-light-minimize:hover svg circle {
+  fill: #ffbd2e !important;
+}
+
+.traffic-light-maximize:hover svg circle {
+  fill: #28ca42 !important;
+}
+
+/* Windows/Linux Titlebar Buttons - Native Style */
+.titlebar-btn {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  position: relative;
+}
+
+.titlebar-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.titlebar-btn:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.titlebar-btn svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+  color: #000000;
+  opacity: 0.8;
+  transition: opacity 0.15s ease;
+}
+
+.titlebar-btn:hover svg {
+  opacity: 1;
+}
+
+.titlebar-btn-close:hover {
+  background: #e81123 !important;
+}
+
+.titlebar-btn-close:hover svg {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.titlebar-btn-close:active {
+  background: #c50e1f !important;
+}
+
+/* Dark mode titlebar */
+.dark .titlebar {
+  background: #1f2937;
+  border-bottom-color: #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dark .titlebar-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark .titlebar-btn svg {
+  color: #cccccc;
+  opacity: 0.9;
+}
+
+.dark .titlebar-btn-close:hover {
+  background: #e81123 !important;
+}
+
+.dark .titlebar-btn-close:hover svg {
+  color: #ffffff !important;
+}
+
+/* macOS dark mode - traffic lights stay visible */
+.dark .traffic-light svg circle {
+  opacity: 1;
+}
+

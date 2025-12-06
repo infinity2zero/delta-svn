@@ -1,0 +1,15 @@
+{
+  "name": "delta-svn",
+  "version": "0.1.0",
+  "description": "DELTA SVN - Track Every Change",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "tauri": "cargo tauri",
+    "tauri:dev": "cargo tauri dev",
+    "tauri:build": "cargo tauri build"
+  },
+  "devDependencies": {}
+}
+

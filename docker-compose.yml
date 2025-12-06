@@ -1,0 +1,21 @@
+services:
+  svn-server:
+    image: elleflorio/svn-server:latest
+    container_name: delta-svn-server
+    ports:
+      - "3690:3690"  # SVN protocol (svn://)
+      - "8080:80"    # HTTP (http://)
+    volumes:
+      - ./svn-repos:/var/opt/svn
+      - ./svn-config:/etc/subversion
+    environment:
+      - SVN_REPO_NAME=test-repo
+      - SVN_USERNAME=tester
+      - SVN_PASSWORD=password123
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "svn", "list", "svn://localhost/test-repo", "--non-interactive"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+

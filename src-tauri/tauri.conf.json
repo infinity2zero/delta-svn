@@ -1,0 +1,66 @@
+{
+  "productName": "DELTA SVN",
+  "version": "0.1.0",
+  "identifier": "com.deltasvn.app",
+  "build": {
+    "beforeDevCommand": "cd frontend && npm run dev",
+    "beforeBuildCommand": "cd frontend && npm run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../frontend/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "DELTA SVN",
+        "label": "main",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 800,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": false,
+        "transparent": true,
+        "shadow": true
+      }
+    ],
+    "security": {
+      "csp": null,
+      "capabilities": [
+        {
+          "identifier": "window-capabilities",
+          "description": "Window management capabilities",
+          "windows": ["main"],
+          "permissions": [
+            "core:default",
+            "core:window:allow-close",
+            "core:window:allow-center",
+            "core:window:allow-minimize",
+            "core:window:allow-maximize",
+            "core:window:allow-unmaximize",
+            "core:window:allow-set-size",
+            "core:window:allow-set-focus",
+            "core:window:allow-is-maximized",
+            "core:window:allow-start-dragging",
+            "core:window:allow-internal-toggle-maximize",
+            "core:window:default",
+            "core:event:allow-listen",
+            "core:event:default"
+          ]
+        }
+      ]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
+
