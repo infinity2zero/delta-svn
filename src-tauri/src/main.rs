@@ -11,11 +11,10 @@ fn main() {
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
         .plugin(tauri_plugin_dialog::init())
-        .setup(|_app| {
+        .setup(|app| {
             // Apply OS-level rounded corners for Windows 11
             #[cfg(target_os = "windows")]
             {
-                use windows::Win32::UI::WindowsAndMessaging::*;
                 use windows::Win32::Graphics::Dwm::*;
                 use windows::Win32::Foundation::HWND;
 
@@ -25,7 +24,8 @@ fn main() {
                         let hwnd = HWND(hwnd.0);
                         
                         // Apply rounded corners using DWM
-                        let corner_preference = DWM_WINDOW_CORNER_PREFERENCE_ROUND;
+                        // DWMWCP_ROUND = 2
+                        let corner_preference = DWM_WINDOW_CORNER_PREFERENCE(2);
                         unsafe {
                             DwmSetWindowAttribute(
                                 hwnd,

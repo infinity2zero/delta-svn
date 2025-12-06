@@ -587,8 +587,8 @@ pub async fn commit_working_copy(
                     else if src_filename == dest_filename && src_path != dest_path {
                         // Additional check: ensure they're in the same directory structure
                         // (for renames) or related paths (for moves)
-                        let dest_parent = dest_path.rsplitn(2, '/').nth(1).unwrap_or("");
-                        let src_parent = src_path.rsplitn(2, '/').nth(1).unwrap_or("");
+                        let _dest_parent = dest_path.rsplitn(2, '/').nth(1).unwrap_or("");
+                        let _src_parent = src_path.rsplitn(2, '/').nth(1).unwrap_or("");
                         
                         // Same parent = rename, different parent = move
                         // Both are valid moves
