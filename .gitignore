@@ -3,6 +3,8 @@ node_modules/
 frontend/node_modules/
 frontend/dist/
 frontend/dist-ssr/
+# Keep package-lock.json for reproducible builds
+!frontend/package-lock.json
 
 # Build outputs
 src-tauri/target/
