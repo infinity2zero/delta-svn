@@ -4,10 +4,10 @@
 
 A modern, cross-platform SVN client built with Tauri + React, designed to be a sophisticated replacement for TortoiseSVN with enhanced features and a beautiful native-like UI.
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/delta-svn/actions)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/infinity2zero/delta-svn/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/yourusername/delta-svn/releases)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](https://github.com/yourusername/delta-svn/releases)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/infinity2zero/delta-svn/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](https://github.com/infinity2zero/delta-svn/releases)
 
 ---
 
@@ -83,12 +83,12 @@ A modern, cross-platform SVN client built with Tauri + React, designed to be a s
 
 Download the latest release for your platform:
 
-- **Windows:** [Download MSI Installer](https://github.com/yourusername/delta-svn/releases/latest/download/delta-svn_0.1.0_x64_en-US.msi)
-- **macOS:** [Download DMG](https://github.com/yourusername/delta-svn/releases/latest/download/delta-svn_0.1.0_x64.dmg) (Intel + Apple Silicon)
+- **Windows:** [Download MSI Installer](https://github.com/infinity2zero/delta-svn/releases/latest/download/delta-svn_0.1.0_x64_en-US.msi)
+- **macOS:** [Download DMG](https://github.com/infinity2zero/delta-svn/releases/latest/download/delta-svn_0.1.0_x64.dmg) (Intel + Apple Silicon)
 - **Linux:** 
-  - [AppImage](https://github.com/yourusername/delta-svn/releases/latest/download/delta-svn_0.1.0_amd64.AppImage)
-  - [DEB Package](https://github.com/yourusername/delta-svn/releases/latest/download/delta-svn_0.1.0_amd64.deb)
-  - [RPM Package](https://github.com/yourusername/delta-svn/releases/latest/download/delta-svn_0.1.0_amd64.rpm)
+  - [AppImage](https://github.com/infinity2zero/delta-svn/releases/latest/download/delta-svn_0.1.0_amd64.AppImage)
+  - [DEB Package](https://github.com/infinity2zero/delta-svn/releases/latest/download/delta-svn_0.1.0_amd64.deb)
+  - [RPM Package](https://github.com/infinity2zero/delta-svn/releases/latest/download/delta-svn_0.1.0_amd64.rpm)
 
 ### System Requirements
 
@@ -202,7 +202,7 @@ You can skip the onboarding and access it later from Settings.
 
    ```bash
 # Clone the repository
-git clone https://github.com/yourusername/delta-svn.git
+git clone https://github.com/infinity2zero/delta-svn.git
 cd delta-svn
 
 # Install frontend dependencies
@@ -342,15 +342,15 @@ See [LAUNCH_ANALYSIS_AND_PLAN.md](LAUNCH_ANALYSIS_AND_PLAN.md) for the complete 
 
 - Advanced merge conflict resolution features (currently supports basic accept theirs/mine/working)
 
-For a complete list of known issues, see [GitHub Issues](https://github.com/yourusername/delta-svn/issues).
+For a complete list of known issues, see [GitHub Issues](https://github.com/infinity2zero/delta-svn/issues).
 
 ---
 
 ## 💬 Support
 
 - **Documentation:** Access the in-app User Guide (Help menu)
-- **Issues:** [GitHub Issues](https://github.com/yourusername/delta-svn/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/delta-svn/discussions)
+- **Issues:** [GitHub Issues](https://github.com/infinity2zero/delta-svn/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/infinity2zero/delta-svn/discussions)
 
 ---
 
@@ -386,7 +386,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/delta-svn&type=Date)](https://star-history.com/#yourusername/delta-svn&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=infinity2zero/delta-svn&type=Date)](https://star-history.com/#infinity2zero/delta-svn&Date)
 
 ---
 
