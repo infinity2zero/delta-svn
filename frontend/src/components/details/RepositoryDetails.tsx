@@ -121,15 +121,6 @@ export function RepositoryDetails({ repository, loading }: RepositoryDetailsProp
   )
 }
 
-function InfoRow({ label, value, valueClass }: { label: string; value: string; valueClass?: string }) {
-  return (
-    <div className="flex justify-between items-center">
-      <div className="text-xs font-medium text-gray-500 dark:text-gray-400">{label}</div>
-      <div className={`text-sm font-semibold text-gray-900 dark:text-white ${valueClass || ''}`}>{value}</div>
-    </div>
-  )
-}
-
 function InfoRowWithIcon({ 
   icon: Icon, 
   label, 

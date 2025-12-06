@@ -10,7 +10,6 @@ import {
   ArrowsRightLeftIcon,
   LinkIcon,
   WrenchScrewdriverIcon,
-  ClockIcon,
   DocumentTextIcon,
   ArrowDownTrayIcon,
   ArrowUpTrayIcon,

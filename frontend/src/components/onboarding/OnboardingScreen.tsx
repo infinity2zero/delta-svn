@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { XMarkIcon, ArrowRightIcon, ArrowLeftIcon, SparklesIcon, EyeIcon, EyeSlashIcon, CheckCircleIcon as CheckCircleOutlineIcon, XCircleIcon, ArrowPathIcon, LinkIcon } from '@heroicons/react/24/outline'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { TitleBar } from '../layout/TitleBar'

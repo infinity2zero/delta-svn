@@ -46,7 +46,6 @@ export function reconstructOldFile(
       newLineIndex++
     } else if (firstChar === ' ') {
       // Context line - exists in both
-      const content = line.substring(1)
       lineMapping.set(newLineIndex + 1, { type: 'unchanged' })
       oldLineIndex++
       newLineIndex++

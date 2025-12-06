@@ -5,7 +5,6 @@ import {
   DocumentTextIcon,
   ClipboardDocumentIcon,
   ArrowDownTrayIcon,
-  InformationCircleIcon,
 } from '@heroicons/react/24/outline'
 import { Tooltip } from 'react-tooltip'
 
@@ -60,7 +59,7 @@ function detectLanguage(filePath: string | null): string {
   return languageMap[ext || ''] || 'plaintext'
 }
 
-export function FileViewer({ filePath, fileContent, isLoading, error, connectionUrl }: FileViewerProps) {
+export function FileViewer({ filePath, fileContent, isLoading, error, connectionUrl: _connectionUrl }: FileViewerProps) {
   const { theme } = useTheme()
   const editorTheme = theme === 'dark' ? 'vs-dark' : 'light'
   const language = useMemo(() => detectLanguage(filePath), [filePath])

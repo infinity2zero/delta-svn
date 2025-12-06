@@ -15,7 +15,7 @@ export function MoveRenameModal({
   onClose,
   onConfirm,
   file,
-  workingCopyPath,
+  workingCopyPath: _workingCopyPath,
 }: MoveRenameModalProps) {
   const [destinationPath, setDestinationPath] = useState('')
   const [error, setError] = useState<string | null>(null)

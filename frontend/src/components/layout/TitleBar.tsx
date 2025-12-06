@@ -21,7 +21,7 @@ type TitleBarProps = {
   toolbarGroups?: ActionGroup[]
 }
 
-export function TitleBar({ selectedRepo, toolbarGroups }: TitleBarProps) {
+export function TitleBar({ selectedRepo: _selectedRepo, toolbarGroups }: TitleBarProps) {
   const [platform, setPlatform] = useState<'macos' | 'windows' | 'linux'>('windows')
   const [appWindow, setAppWindow] = useState<ReturnType<typeof getCurrentWindow> | null>(null)
 

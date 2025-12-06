@@ -125,13 +125,6 @@ export function ChangesView({
     }
   }
 
-  const handleSelectAll = () => {
-    if (stagedFiles.size === changes.length) {
-      setStagedFiles(new Set())
-    } else {
-      setStagedFiles(new Set(changes.map((f) => f.name)))
-    }
-  }
 
   return (
     <div className="flex flex-1 h-full flex-col overflow-hidden">

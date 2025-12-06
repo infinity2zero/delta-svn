@@ -288,7 +288,6 @@ export function HistoryView({ workingCopyPath, selectedCommit, onSelectCommit, s
     data,
     isLoading,
     error,
-    fetchNextPage,
     hasNextPage,
     isFetchingNextPage,
     refetch,
@@ -574,8 +573,8 @@ export function HistoryView({ workingCopyPath, selectedCommit, onSelectCommit, s
   )
 
   const renderMessageWithIssues = useCallback(
-    (text: string): JSX.Element[] => {
-      const parts: JSX.Element[] = []
+    (text: string): React.JSX.Element[] => {
+      const parts: React.JSX.Element[] = []
       let lastIndex = 0
       let match: RegExpExecArray | null
       const regex = new RegExp(ISSUE_KEY_REGEX.source, 'g')

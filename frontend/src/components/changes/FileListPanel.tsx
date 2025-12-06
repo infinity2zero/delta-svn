@@ -78,7 +78,7 @@ export function FileListPanel({
     }
   })
 
-  const handleFileToggle = (fileName: string, e: React.MouseEvent) => {
+  const handleFileToggle = (fileName: string, e: React.ChangeEvent<HTMLInputElement> | React.MouseEvent) => {
     e.stopPropagation()
     
     // Check if this is a directory path
@@ -199,7 +199,6 @@ export function FileListPanel({
         const dirPath = topDir
         const dirStaged = areAllFilesInDirStaged(dirPath)
         const dirIndeterminate = areSomeFilesInDirStaged(dirPath)
-        const allFilesInDir = getAllFilesInDir(dirPath)
 
         return (
           <div key={topDir}>

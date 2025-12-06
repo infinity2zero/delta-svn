@@ -15,7 +15,7 @@ export function CopyFileModal({
   onClose,
   onConfirm,
   file,
-  workingCopyPath,
+  workingCopyPath: _workingCopyPath,
 }: CopyFileModalProps) {
   const [destinationPath, setDestinationPath] = useState('')
   const [error, setError] = useState<string | null>(null)

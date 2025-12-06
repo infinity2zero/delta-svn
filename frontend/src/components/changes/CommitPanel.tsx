@@ -20,7 +20,7 @@ type CommitPanelProps = {
 
 export function CommitPanel({
   stagedCount,
-  totalCount,
+  totalCount: _totalCount,
   branchName,
   stagedFiles,
   workingCopyPath,

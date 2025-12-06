@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import {
   XMarkIcon,
-  MagnifyingGlassIcon,
   BookOpenIcon,
   RocketLaunchIcon,
   WrenchScrewdriverIcon,

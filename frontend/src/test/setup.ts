@@ -1,4 +1,4 @@
-import { expect, afterEach, vi, beforeAll } from 'vitest'
+import { afterEach, vi, beforeAll } from 'vitest'
 import { cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/vitest'
 
@@ -10,7 +10,7 @@ beforeAll(() => {
   }
   
   // Mock Tauri API
-  global.window.__TAURI_INTERNALS__ = {}
+  ;(global.window as any).__TAURI_INTERNALS__ = {}
   
   // Mock HTMLElement if needed
   if (typeof HTMLElement === 'undefined') {

@@ -1,16 +1,5 @@
 import { useState } from 'react'
 import { Tooltip } from 'react-tooltip'
-import {
-  ArrowPathIcon,
-  CheckCircleIcon,
-  ArrowsRightLeftIcon,
-  ArrowUturnLeftIcon,
-  WrenchScrewdriverIcon,
-  ClockIcon,
-  DocumentDuplicateIcon,
-  TrashIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
 
 export type Action = {
   id: string
@@ -29,7 +18,7 @@ type ActionRailProps = {
 }
 
 export function ActionRail({ actions, iconOnly = true, position = 'right' }: ActionRailProps) {
-  const [hoveredAction, setHoveredAction] = useState<string | null>(null)
+  const [_hoveredAction, setHoveredAction] = useState<string | null>(null)
 
   if (actions.length === 0) {
     return null
@@ -42,8 +31,6 @@ export function ActionRail({ actions, iconOnly = true, position = 'right' }: Act
       <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg rounded-none flex flex-col gap-1 p-1.5">
         {actions.map((action) => {
           const actionId = `action-${action.id}`
-          const isHovered = hoveredAction === actionId
-
           return (
             <div key={action.id}>
               <button

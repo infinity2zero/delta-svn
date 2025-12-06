@@ -6,6 +6,7 @@ const statusColorMap: Record<FileChange['status'], string> = {
   MODIFIED: 'text-orange-700 bg-orange-100 dark:text-orange-300 dark:bg-orange-900/30',
   CONFLICTED: 'text-red-700 bg-red-100 dark:text-red-300 dark:bg-red-900/30',
   DELETED: 'text-red-700 bg-red-100 dark:text-red-300 dark:bg-red-900/30',
+  UNVERSIONED: 'text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900/30',
 }
 
 type FileListProps = {

@@ -46,7 +46,7 @@ const getStatusChip = (status?: string) => {
 export function DiffViewer({ fileName, status, workingCopyPath }: DiffViewerProps) {
   const [viewMode, setViewMode] = useState<'unified' | 'split'>('unified')
   const { data: diffContent, isLoading, error } = useFileDiff(workingCopyPath, fileName)
-  const { data: fullFileContent, isLoading: isLoadingFile, error: fileContentError } = useFileContent(workingCopyPath, fileName)
+  const { data: fullFileContent } = useFileContent(workingCopyPath, fileName)
 
   const editorTheme = useMemo(() => {
     return document.documentElement.classList.contains('dark') ? 'vs-dark' : 'light'

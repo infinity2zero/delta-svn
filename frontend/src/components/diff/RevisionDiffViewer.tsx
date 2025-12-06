@@ -80,7 +80,7 @@ export function RevisionDiffViewer({
     return document.documentElement.classList.contains('dark') ? 'vs-dark' : 'light'
   }, [])
 
-  const { oldContent, newContent, oldFileName, newFileName } = useMemo(() => {
+  const { oldContent, newContent, newFileName } = useMemo(() => {
     if (!diffContent) {
       return { oldContent: '', newContent: '', oldFileName: undefined, newFileName: undefined }
     }

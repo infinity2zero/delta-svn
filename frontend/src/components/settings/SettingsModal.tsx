@@ -26,7 +26,7 @@ const languages = [
 ]
 
 export function SettingsModal({ isOpen, onClose, onShowUserGuide }: SettingsModalProps) {
-  const { theme, mode, setMode } = useTheme()
+  const { mode, setMode } = useTheme()
   const { iconOnly, setIconOnly } = useActionRailSettings()
   const { fontSize, setFontSize } = useFontSize()
   const { resetOnboarding } = useOnboarding()

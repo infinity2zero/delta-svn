@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { invoke } from '@tauri-apps/api/core'
 import {
   ChevronDownIcon,
   ChevronUpIcon,
@@ -10,7 +9,6 @@ import {
   XCircleIcon,
   ArrowPathIcon,
 } from '@heroicons/react/24/outline'
-import { Tooltip } from 'react-tooltip'
 
 type ServerConfigPanelProps = {
   serverUrl: string
